@@ -10,7 +10,11 @@ public class Lista_Ordenacao_simples {
 		int aux;
 		
 		for (int i = 0; i < lista.length; i++) {
+		
+			//Compara e troca elementos adjacentes
 			for (int j = 0; j < lista.length - 1; j++) {
+				
+			//Se o elemento atual ao lado for maior será trocado
 				if(lista[j] > lista[j+1]) {
 					aux = lista[j];
 					lista[j] = lista[j+1];

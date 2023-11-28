@@ -1,4 +1,4 @@
-package fibonacci;
+package q1_fibonacci;
 
 public class fibonacci {
 

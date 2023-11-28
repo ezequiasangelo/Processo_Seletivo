@@ -1,11 +1,11 @@
-package ArvoreBinaria;
+package q5_ArvoreBinaria;
 
 class No {
-    int valor;
+    int num;
     No esquerda, direita;
 
     public No(int item) {
-        valor = item;
+        num = item;
         esquerda = direita = null;
     }
 }
@@ -21,7 +21,7 @@ class ArvoreBinaria {
     public void percorrerOrdem(No no) {
         if (no != null) {
             percorrerOrdem(no.esquerda);
-            System.out.print(no.valor + " ");
+            System.out.print(no.num + " ");
             percorrerOrdem(no.direita);
         }
     }
@@ -29,7 +29,7 @@ class ArvoreBinaria {
     public static void main(String[] args) {
         ArvoreBinaria arvore = new ArvoreBinaria();
 
-        // Add os números de 1 a 5
+        
         arvore.raiz = new No(3);
         arvore.raiz.esquerda = new No(2);
         arvore.raiz.direita = new No(4);
@@ -37,7 +37,7 @@ class ArvoreBinaria {
         arvore.raiz.direita.direita = new No(5);
 
         
-        System.out.println("Número em ordem:");
+        System.out.println("Árvore binária em ordem:");
         arvore.percorrerOrdem(arvore.raiz);
     }
 }

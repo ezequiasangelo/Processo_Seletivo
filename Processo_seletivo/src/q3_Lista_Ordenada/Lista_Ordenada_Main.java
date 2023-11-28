@@ -1,4 +1,4 @@
-package Lista_Ordenada;
+package q3_Lista_Ordenada;
 
 
 import java.util.Scanner;
@@ -36,11 +36,11 @@ public class Lista_Ordenada_Main {
             int meio = (inicio + fim) / 2;
 
             if (lista[meio] == alvo) {
-                return meio; // Retorna a posição
+                return meio; 
             } else if (lista[meio] < alvo) {
-                inicio = meio + 1; // Descarta metade inferior
+                inicio = meio + 1; 
             } else {
-                fim = meio - 1; // Descarta metade superior
+                fim = meio - 1; 
             }
         }
         

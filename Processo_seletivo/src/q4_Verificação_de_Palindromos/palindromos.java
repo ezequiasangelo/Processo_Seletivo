@@ -1,4 +1,4 @@
-package Verificação_de_Palindromos;
+package q4_Verificação_de_Palindromos;
 
 import java.util.Scanner;
 
@@ -9,7 +9,7 @@ public class palindromos {
 		Scanner scanner = new Scanner(System.in);
 
 		
-		System.out.print("Escreva uma palavra para sabermos se é um palídromo: ");
+		System.out.println("Escreva uma palavra para sabermos se é um palídromo: Ex: ara, anilina, ama...");
 		String palavra = scanner.next();
 		scanner.close();
 		
@@ -18,7 +18,7 @@ public class palindromos {
 		
 	}
 	
-	private static boolean informaPalidromo(String palavra) {
+	public static boolean informaPalidromo(String palavra) {
 		
 		String TrazFrente = "";
 		
